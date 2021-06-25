@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scal=1"/>
+		<script type="text/javascript" src="JQ/jquery-3.4.1.js" charset="utf-8"></script>
+		<script type="text/javascript" src="JS/bootstrap.js" charset="utf-8" ></script>
+		<script type="text/javascript" src="JS/bootstrap.bundle.js" charset="utf-8" ></script>
+		<link rel="stylesheet" href="CSS/bootstrap.css" />
+	</head>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('[data-toggle="popover"]').popover(); 
+		});
+	</script>
+	<style type="text/css">
+		body{
+			font-family: '楷体';
+		}
+		#TopNavigationBar{
+			/*overflow: hidden;
+			position: sticky;
+			z-index: 999;*/
+			position: -webkit-sticky;
+			position: sticky;
+			top: -1px;
+			z-index: 99;
+		}
+		.mouseHand{
+			cursor:pointer;
+		}
+		.bg{
+			background-color: ;
+			border: 1px solid deepskyblue;
+		}
+		.body-radius{
+			border-radius: 0.25rem;
+		}
+		hr{
+			background-color: #17a2b8;
+		}
+		.carousel-inner img{
+			width: 100%;
+			height: 100%;
+		}
+		.img-thumbnail{
+			border: 1px solid deepskyblue;
+		}
+		.card{
+			border-radius: 0.5rem;
+			margin: 10px;
+		}
+		.card-body{
+			border-radius:0rem 0rem 0.5rem 0.5rem;
+			background-color: aquamarine;
+		}
+		.card-Y{
+			background-color: #666600
+		}
+		.card-Q{
+			background-color: #2E2E68;
+		}
+		.card-KQ{
+			background-color: #814908;
+		}
+		.card-KH{
+			background-color: #817608;
+		}
+		.card-G{
+			background-color: #055836;
+		}
+		.card-J{
+			background-color: #3E7407;
+		}
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+		.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+		.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+		.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+		.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+		.col-xl-auto {
+		  padding-right: 5px;
+		  padding-left: 5px;
+		}
+	</style>
+	<body>
+		<div class="container" id="head">
+			<div class="row" id="TopNavigationBar">
+				<div class="p-0 m-0 col-12">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb" id="ol">
+							<li class="breadcrumb-item">
+								<a href="index.html" class="text-info">Home</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a class="text-info" data-toggle="collapse" href="#yuyan" aria-expanded="false" aria-controls="collapseExample">语言</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a class="text-info" data-toggle="collapse" href="#qianduan" aria-expanded="false" aria-controls="collapseExample">前端</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a class="text-info" data-toggle="collapse" href="#kuangjia" aria-expanded="false" aria-controls="collapseExample">框架</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a class="text-info" data-toggle="collapse" href="#gongju" aria-expanded="false" aria-controls="collapseExample">工具</a>
+							</li>
+							<li class="breadcrumb-item" style="margin-right: 25%;">
+								<a class="text-info" data-toggle="collapse" href="#jiaoliu" aria-expanded="false" aria-controls="collapseExample">交流</a>
+							</li>
+							<li id="search" class="float-right" style="white-space: nowrap;">
+								<form class="float-left mr-2" action="" method="post" style="">
+									<input type="text" class="body-radius text-center" style="border: 1px solid #17a2b8;height: 32px;" placeholder="输入搜索词" /><input type="submit" class="body-radius text-center bg-info text-white" value="搜索" />
+								</form>
+								<a class="" data-toggle="collapse" href="#setting" aria-expanded="false" aria-controls="collapseExample">
+									<img src="SVG/gear-fill.svg" width="25px" />
+								</a>
+								<div class="collapse float-right ml-2 text-info" id="setting">
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb p-0 m-0" style="font-size: 18px;">
+											<li class="breadcrumb-item mouseHand">夜间模式</li>
+											<li class="breadcrumb-item mouseHand"><a href="HTML/登录/login.html">登录</a></li>
+										</ol>
+									</nav>
+								</div>
+							</li>
+							<li class="ml-2" style="width: 5%;">
+								<!--<div style="cursor:pointer;" class="float-right"></div>-->
+								
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<!--导航栏，轮播，头部-->
+			<div class="row">
+				<div id="demo" class="p-0 m-0 col-12 carousel slide" data-ride="carousel">
+			
+					<!-- 指示符 -->
+					<!--<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+					</ul>-->
+				
+					<!-- 轮播图片 -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="IMG/carousel/1.png" class="img-thumbnail">
+						</div>
+						<div class="carousel-item">
+							<img src="IMG/carousel/2.png" class="img-thumbnail">
+						</div>
+						<div class="carousel-item">
+							<img src="IMG/carousel/3.png" class="img-thumbnail">
+						</div>
+					</div>
+				
+					<!-- 左右切换按钮 -->
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+			<!--内容-->
+			<div class="row body-radius bg p-3 mt-1">
+				<!--语言-->
+				<div class="col-12" id="content-yuyan">
+					<!--标题-->
+					<a data-toggle="collapse" href="#yuyan" aria-expanded="false" aria-controls="collapseExample">
+				    	<h2 class="text-info">语言</h2>
+					</a>
+					<hr />
+					<div class="collapse" id="yuyan">
+						<div class="container mb-4">
+							<div class="row">
+								<!--Kotlin-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/Kotlin.html" class="btn text-white"><b>Kotlin </b><span class="badge badge-danger">New</span></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">现代</span>
+											<span class="badge badge-primary">简洁</span>
+											<span class="badge badge-primary">安全</span>
+											<span class="badge badge-primary">兼容Java</span>
+											被赞誉为Android世界里的<span class="badge badge-warning">Swift</span>。
+											Kotlin还可以编译成Java字节码
+										</div>
+									</div>
+								</div>
+								<!--Java-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/Java.html" class="btn text-white"><b>Java </b><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">一次编写，到处运行的特点</span>
+											<span class="badge badge-primary">功能强大</span>
+											Java语言最大的优点就是与平台无关。
+										</div>
+									</div>
+								</div>
+								<!--Python-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/Python.html" class="btn text-white"><b>Python </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">干净</span>
+											<span class="badge badge-primary">简单易用</span>
+											<span class="badge badge-primary">功能强大</span>
+											 标准库和第三库众多，简单就是它的最大魅力
+										</div>
+									</div>
+								</div>
+								<!--C-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/C.html" class="btn text-white"><b>C </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">代码量小</span>
+											<span class="badge badge-primary">运行速度快</span>
+											它兼顾了高级语言和汇编语言的优点,相较于其它编程语言具有较大优势
+										</div>
+									</div>
+								</div>
+								<!--C++-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/C++.html" class="btn text-white"><b>C++ </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">信息隐藏</span>
+											<span class="badge badge-primary">多态</span>
+											<span class="badge badge-primary">继承</span>
+											C++ 可运行于多种平台上，如 Windows、MAC、以及 UNIX 的各种版本
+										</div>
+									</div>
+								</div>
+								<!--C#-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/C#.html" class="btn text-white"><b>C# </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">安全</span>
+											<span class="badge badge-primary">稳定</span>
+											<span class="badge badge-primary">优雅</span>
+											<span class="badge badge-primary">简单</span>
+											它继承C和C++强大功能同时去掉了一些它们的复杂特性
+										</div>
+									</div>
+								</div>
+								<!--Go-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/Go.html" class="btn text-white"><b>Go </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">效率</span>
+											<span class="badge badge-primary">性能</span>
+											<span class="badge badge-primary">安全</span>
+											<span class="badge badge-primary">健壮</span>
+											Go与C相近,但功能上有:内存安全,GC(垃圾回收)
+										</div>
+									</div>
+								</div>
+								<!--PHP-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Y">
+										<div class="card-header"><a href="HTML/语言/PHP.html" class="btn text-white"><b>PHP </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">免费的</span>
+											<span class="badge badge-primary">脚本语言</span>
+											<span class="badge badge-primary">交互</span>
+											是在服务器端执行的脚本语言,尤其适用于Web开发并可嵌入HTML中
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</div>
+				</div>
+				<!--前端-->
+				<div class="col-12" id="content-qianduan">
+					<!--标题-->
+					<a data-toggle="collapse" href="#qianduan" aria-expanded="false" aria-controls="collapseExample">
+				    	<h2 class="text-info">前端</h2>
+					</a>
+					<hr />
+					<div class="collapse" id="qianduan">
+						<div class="container mb-4">
+							<div class="row">
+								<!--HTML-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Q">
+										<div class="card-header"><a href="HTML/前端/HTML.html" class="btn text-white"><b>HTML </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">超文本标记语言</span>
+											它通过一系列标签可以将分散的Internet资源连接为一个逻辑整体
+										</div>
+									</div>
+								</div>
+								<!--HTML5-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Q">
+										<div class="card-header"><a href="HTML/前端/HTML5.html" class="btn text-white"><b>HTML5 </b><span class="badge badge-danger">New</span></a></div>
+										<div class="card-body p-1">
+											HTML5是下一代HTML
+											<span class="badge badge-primary">标准</span>
+											但仍处于完善之中,然而大部分现代浏览器已经具备了某HTML5支持
+										</div>
+									</div>
+								</div>
+								<!--CSS-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Q">
+										<div class="card-header"><a href="HTML/前端/CSS.html" class="btn text-white"><b>CSS </b></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">层叠样式表</span>
+											是一种用来表现HTML或XML等文件样式的计算机语言。对网页各元素进行格式化
+										</div>
+									</div>
+								</div>
+								<!--CSS#-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-Q">
+										<div class="card-header"><a href="HTML/前端/CSS3.html" class="btn text-white"><b>CSS3 </b><span class="badge badge-danger">New</span></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">层叠样式表</span>
+											css3作为css进阶版,拆分和增加了盒子模型、列表模块、语言模块 、背景边框等
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</div>
+				</div>
+				<!--框架-->
+				<div class="col-12" id="content-kuangjia">
+					<!--标题-->
+					<a data-toggle="collapse" href="#kuangjia" aria-expanded="false" aria-controls="collapseExample">
+				    	<h2 class="text-info">框架</h2>
+					</a>
+					<hr />
+					<div class="collapse" id="kuangjia">
+						<div class="container">
+							<div class="row">
+								<!--BOotStrap-->
+								<div class="col-lg-3 col-6">
+									<div class="card card-KQ">
+										<div class="card-header"><a href="HTML/框架/BootStrap.html" class="btn text-white"><b>BootStrap </b><span class="badge badge-warning">前端</span></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">前端组件库</span>
+											<span class="badge badge-primary">响应式布局</span>
+											有了BootStrap之后,安卓电脑可以只做一个项目
+										</div>
+									</div>
+								</div>
+								<!--Vue-->
+								<div class="col-lg-3 col-6">
+									<div class="card card-KQ">
+										<div class="card-header"><a href="HTML/框架/Vue.html" class="btn text-white"><b>Vue </b><span class="badge badge-warning">前端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">易用</span>
+											<span class="badge badge-primary">灵活</span>
+											<span class="badge badge-primary">高效</span>
+											 是一套用于构建用户界面的渐进式框架。Vue 被设计为可以自底向上逐层应用
+										</div>
+									</div>
+								</div>
+								<!--Spring-->
+								<div class="col-lg-3 col-6">
+									<div class="card card-KH">
+										<div class="card-header"><a href="HTML/框架/Spring.html" class="btn text-white"><b>Spring </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">轻量级开源框架</span>
+											它为容易而快速的开发出耐用的 Java 应用程序提供了全面的基础设施
+										</div>
+									</div>
+								</div>
+								<!--Spring MVC-->
+								<div class="col-lg-3 col-6">
+									<div class="card card-KH">
+										<div class="card-header"><a href="HTML/框架/SpringMVC.html" class="btn text-white"><b>Spring MVC </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">高度可配置</span>
+											SpringMVC提供了模型-视图-控制体系结构,可以用来开发web应用程序的组件
+										</div>
+									</div>
+								</div>
+								<!--MyBatis-->
+								<div class="col-lg-3 col-6">
+									<div class="card card-KH">
+										<div class="card-header"><a href="HTML/框架/MyBatis.html" class="btn text-white"><b>MyBatis </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">持久层框架</span>
+											MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和获取结果集的工作
+										</div>
+									</div>
+								</div>
+								<!--Hibernate-->
+								<div class="col-lg-3 col-6">
+									<div class="card card-KH">
+										<div class="card-header"><a href="HTML/框架/Hibernate.html" class="btn text-white"><b>Hibernate </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">对象关系映射框架</span>
+											<span class="badge badge-primary">开放源代码</span>
+											它作为数据库与界面之间的桥梁,需要面向对象思想操纵对象
+										</div>
+									</div>
+								</div>
+								<!--Struts2-->
+								<div class="col-lg-3 col-6">
+									<div class="card card-KH">
+										<div class="card-header"><a href="HTML/框架/Struts2.html" class="btn text-white"><b>Struts 2 </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">简洁</span>
+											<span class="badge badge-primary">可扩展</span>
+											Struts2是一个基于MVC设计模式的Web应用框架，它本质上相当于一个servlet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</div>
+				</div>
+				<!--工具-->
+				<div class="col-12" id="content-gongju">
+					<!--标题-->
+					<a data-toggle="collapse" href="#gongju" aria-expanded="false" aria-controls="collapseExample">
+				    	<h2 class="text-info">工具</h2>
+					</a>
+					<hr />
+					<div class="collapse" id="gongju">
+						<div class="container mb-4">
+							<div class="row">
+								<!--B站-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-G">
+										<div class="card-header"><a href="https://www.bilibili.com/" class="btn text-white"><b>B站 </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">视频平台</span>
+											B站，里面的资源非常广，不论是娱乐，还是分享，学习等等。它都是一个不错的选择
+										</div>
+									</div>
+								</div>
+								<!--KuangStudy-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-G">
+										<div class="card-header"><a href="https://www.kuangstudy.com/" class="btn text-white"><b>KuangStudy </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">Java</span>
+											<span class="badge badge-primary">全栈</span>
+											<span class="badge badge-primary">免费</span>
+											KuangStudy，以学为伴，一生相伴！这个网站可以让你从Java小白到大神
+										</div>
+									</div>
+								</div>
+								<!--CodePen-->
+								<div class="col-lg-3 col-md-6">
+									<div class="card card-G">
+										<div class="card-header"><a href="https://codepen.io/" class="btn text-white"><b>CodePen </b><span class="badge badge-warning">后端</span><img src="SVG/stars.svg" /></a></div>
+										<div class="card-body p-1">
+											<span class="badge badge-primary">前端</span>
+											<span class="badge badge-primary">项目</span>
+											<span class="badge badge-primary">国内外</span>
+											CodePen，里面分享的都是国内外写的前端demo，可以用来学习项目经验
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</div>
+				</div>
+				<!--交流-->
+				<div class="col-12" id="content-jiaoliu">
+					<!--标题-->
+					<a data-toggle="collapse" href="#jiaoliu" aria-expanded="false" aria-controls="collapseExample">
+				    	<h2 class="text-info">交流</h2>
+					</a>
+					<hr />
+					<div class="collapse" id="jiaoliu">
+						<div class="jumbotron m-3">
+							<h2>本人姓兰，所以就给自己取了一个Mr.L</h2>
+							<p>大家如果想要学习交流，可以添加群。群号00000000。里面都是想要学习的人，进群之后要多多活跃起来哦</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

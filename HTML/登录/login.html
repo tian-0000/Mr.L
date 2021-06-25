@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		<meta name="viewport" content="width=device-width, initial-scal=1"/>
+		<meta charset="utf-8" />
+		<script src="../../JQ/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="../../CSS/bootstrap.css" />
+		<script type="text/javascript" src="../../JS/bootstrap.js" ></script>
+		<script type="text/javascript" src="../../JS/bootstrap.bundle.js" ></script>
+	</head>
+	<style type="text/css">
+		body {
+			margin-top: 10px;
+			font-family: '楷体';
+		}
+	</style>
+	<script type="text/javascript">
+		//验证表单是否为空
+		function validation() {
+			var name = document.forms["form"]["name"].value;
+			var password = document.forms["form"]["password"].value;
+			if(name == null || name == "") {
+				alert("name不能为空");
+				return false;
+			}
+			if(password == null || password == "") {
+				alert("password不能为空");
+				return false;
+			}
+		}
+	</script>
+	
+	<body>
+		<div class="container">
+			<s:include value="./BaseJsp/jumbotron.jsp" />
+			<s:include value="./BaseJsp/userExit.jsp" />
+			<div class="row mt-5">
+				<form name="form" onsubmit="return validation()" method="post" class="col-md-4 offset-md-4 col-8 offset-2">
+					<h3 class="text-info text-center">登录</h3>
+					<div class="form-group">
+						<input type="text" class="form-control mt-3" id="name" name="name" placeholder="Enter name">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control mt-2" id="password" name="password" placeholder="Enter password">
+					</div>
+					<a href="register.jsp" class="btn btn-dark float-left mt-3">&lt;&nbsp;&nbsp;注册</a>
+					<input type="submit" class="btn btn-info float-right mt-3" value="提交  >">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
